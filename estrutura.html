@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estrutura do Estado - EducaConstituição</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Font Awesome (para o ícone de balança) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+
+  <!-- Fonte -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
+    .navbar { background-color: #003366; }
+    .navbar-brand, .nav-link { color: #fff !important; }
+    .hero { background: linear-gradient(135deg, #003366, #006699); color: white; padding: 80px 20px; text-align: center; }
+    .hero h1 { font-weight: 700; }
+    .card {
+      border: none; border-radius: 15px; padding: 25px; background-color: #f8f9fa;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover { transform: translateY(-5px); box-shadow: 0px 6px 15px rgba(0,0,0,0.1); }
+    .timeline { border-left: 4px solid #003366; margin-left: 20px; padding-left: 25px; }
+    .timeline-item { margin-bottom: 30px; position: relative; }
+    .timeline-item::before {
+      content: ""; position: absolute; left: -13px; top: 5px;
+      width: 16px; height: 16px; background-color: #003366; border-radius: 50%;
+    }
+    footer { background-color: #003366; color: #fff; padding: 30px 0; text-align: center; margin-top: 40px; }
+    footer a { color: #ffcc00; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html"><i class="bi bi-book"></i> EducaConstituição</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon text-light"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="fundamentos.html">Fundamentos</a></li>
+          <li class="nav-item"><a class="nav-link active" href="estrutura.html">Estrutura</a></li>
+          <li class="nav-item"><a class="nav-link" href="direitos.html">Direitos</a></li>
+          <li class="nav-item"><a class="nav-link" href="participacao.html">Participação</a></li>
+          <li class="nav-item"><a class="nav-link" href="historia.html">História</a></li>
+          <li class="nav-item"><a class="nav-link" href="creditos.html">Créditos</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="display-5 mb-3">Estrutura do Estado Brasileiro</h1>
+      <p class="lead">Entenda como os poderes se organizam e garantem o equilíbrio e a democracia no Brasil.</p>
+    </div>
+  </section>
+
+  <!-- Conteúdo -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="fw-bold text-primary text-center mb-4">Divisão dos Poderes</h2>
+      <p class="text-center mb-5">
+        A Constituição Federal de 1988 estabelece que o Estado brasileiro é formado por três poderes independentes e harmônicos entre si:
+        <strong>Executivo, Legislativo e Judiciário</strong>.
+      </p>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card text-center shadow-sm h-100">
+            <i class="bi bi-award display-4 text-primary mb-3"></i>
+            <h5 class="fw-bold">Poder Executivo</h5>
+            <p>Responsável por governar e administrar o país, implementando as leis e políticas públicas. É exercido pelo Presidente da República, Governadores e Prefeitos.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card text-center shadow-sm h-100">
+            <i class="bi bi-bank display-4 text-success mb-3"></i>
+            <h5 class="fw-bold">Poder Legislativo</h5>
+            <p>Tem a função de elaborar, discutir e aprovar leis. É representado pelo Congresso Nacional (Câmara dos Deputados e Senado Federal) e pelas Assembleias Legislativas.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card text-center shadow-sm h-100">
+            <i class="fa-solid fa-scale-balanced display-4 text-danger mb-3"></i><br>
+            <h5 class="fw-bold">Poder Judiciário</h5>
+            <p>Julga conflitos e garante o cumprimento das leis e da Constituição. Atua por meio dos tribunais, como o STF, STJ e Tribunais Regionais.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline -->
+  <section class="bg-light py-5">
+    <div class="container">
+      <h3 class="fw-bold text-primary text-center mb-5">Como os Poderes se Relacionam</h3>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h5 class="fw-bold text-primary"><i class="bi bi-circle-fill text-primary me-2"></i> Independência</h5>
+          <p>Cada poder exerce suas funções sem interferência direta dos demais, garantindo equilíbrio e autonomia institucional.</p>
+        </div>
+        <div class="timeline-item">
+          <h5 class="fw-bold text-primary"><i class="bi bi-circle-fill text-primary me-2"></i> Harmonia</h5>
+          <p>Apesar de independentes, os poderes devem cooperar entre si para assegurar o bem-estar da população e a estabilidade do Estado.</p>
+        </div>
+        <div class="timeline-item">
+          <h5 class="fw-bold text-primary"><i class="bi bi-circle-fill text-primary me-2"></i> Fiscalização Recíproca</h5>
+          <p>Os poderes têm mecanismos de controle mútuo, como o veto presidencial, as CPIs e o julgamento de autoridades pelo STF.</p>
+        </div>
+      </div>
+
+      <div class="text-center mt-5">
+        <a href="https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm" target="_blank" class="btn btn-primary me-2">
+          <i class="bi bi-bookmark-star"></i> Ler Constituição
+        </a>
+        <a href="direitos.html" class="btn btn-success">
+          <i class="bi bi-arrow-right-circle"></i> Próximo Tópico
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="container">
+      <p>© 2025 EducaConstituição | Desenvolvido por acadêmicos do Curso de Direito do 
+        <a href="https://www.univel.br/" target="_blank">Centro Universitário Univel</a></p>
+      <p>
+        <a href="https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm" target="_blank">Constituição Federal</a> |
+        <a href="https://forms.gle/xxxxxxxxxxxx" target="_blank">Formulário de Feedback</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
