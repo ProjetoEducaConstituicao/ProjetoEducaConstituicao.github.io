@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>História da Constituição - EducaConstituição</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+
+  <!-- Fonte -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
+    .navbar { background-color: #003366; }
+    .navbar-brand, .nav-link { color: #fff !important; }
+    .hero { background: linear-gradient(135deg, #003366, #006699); color: white; padding: 80px 20px; text-align: center; }
+    .hero h1 { font-weight: 700; }
+
+    /* Linha do tempo */
+    .timeline {
+      position: relative; margin: 50px auto; padding: 20px 0;
+      max-width: 900px;
+    }
+    .timeline::before {
+      content: ""; position: absolute; top: 0; bottom: 0;
+      left: 50%; width: 4px; background: #003366; transform: translateX(-50%);
+    }
+    .timeline-item {
+      position: relative; width: 50%; padding: 20px 40px; box-sizing: border-box;
+    }
+    .timeline-item:nth-child(odd) {
+      left: 0; text-align: right;
+    }
+    .timeline-item:nth-child(even) {
+      left: 50%;
+    }
+    .timeline-item::before {
+      content: ""; position: absolute; top: 30px;
+      width: 20px; height: 20px; border-radius: 50%; background: #ffcc00;
+      border: 3px solid #003366;
+      right: -10px;
+    }
+    .timeline-item:nth-child(even)::before {
+      left: -10px;
+    }
+    .timeline-item h5 { font-weight: 700; color: #003366; }
+    .timeline-item p { margin-top: 5px; }
+
+    /* Seção de redirecionamento */
+    .cta-section {
+      background-color: #003366;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      border-top: 3px solid #ffcc00;
+    }
+    .cta-section h3 { font-weight: 700; margin-bottom: 15px; }
+    .cta-section p { font-size: 1.1rem; margin-bottom: 25px; }
+    .cta-section a.btn {
+      background-color: #ffcc00;
+      color: #003366;
+      font-weight: 600;
+      padding: 12px 25px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+    .cta-section a.btn:hover {
+      background-color: #ffd84d;
+      transform: translateY(-3px);
+    }
+
+    footer { background-color: #003366; color: #fff; padding: 30px 0; text-align: center; margin-top: 60px; }
+    footer a { color: #ffcc00; text-decoration: none; }
+
+    @media (max-width: 768px) {
+      .timeline::before { left: 10px; }
+      .timeline-item { width: 100%; padding-left: 50px; text-align: left !important; }
+      .timeline-item::before { left: 10px; right: auto; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html"><i class="bi bi-book"></i> EducaConstituição</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon text-light"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="fundamentos.html">Fundamentos</a></li>
+          <li class="nav-item"><a class="nav-link" href="estrutura.html">Estrutura</a></li>
+          <li class="nav-item"><a class="nav-link" href="direitos.html">Direitos</a></li>
+          <li class="nav-item"><a class="nav-link" href="participacao.html">Participação</a></li>
+          <li class="nav-item"><a class="nav-link active" href="historia.html">História</a></li>
+          <li class="nav-item"><a class="nav-link" href="creditos.html">Créditos</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="display-5 mb-3">História da Constituição Brasileira</h1>
+      <p class="lead">Conheça a evolução das Constituições do Brasil e entenda como elas moldaram a democracia atual.</p>
+    </div>
+  </section>
+
+  <!-- Linha do tempo -->
+  <section class="py-5">
+    <div class="container">
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <h5>1824 – Primeira Constituição</h5>
+          <p>Promulgada durante o Império, sob Dom Pedro I. Centralizava o poder e instituiu o voto censitário (apenas quem tinha renda podia votar).</p>
+        </div>
+
+        <div class="timeline-item">
+          <h5>1891 – República e Federalismo</h5>
+          <p>Inspirada no modelo dos EUA, marcou a separação entre Igreja e Estado, a criação dos três poderes e o voto direto para homens alfabetizados.</p>
+        </div>
+
+        <div class="timeline-item">
+          <h5>1934 – Constituição Social</h5>
+          <p>Após a Revolução de 1930, trouxe avanços sociais como o voto feminino e direitos trabalhistas.</p>
+        </div>
+
+        <div class="timeline-item">
+          <h5>1937 – Estado Novo</h5>
+          <p>Instituiu o regime ditatorial de Getúlio Vargas, com censura, fim dos partidos e centralização autoritária do poder.</p>
+        </div>
+
+        <div class="timeline-item">
+          <h5>1946 – Redemocratização</h5>
+          <p>Restaurou as liberdades democráticas, o pluralismo político e o Estado de Direito após o fim do Estado Novo.</p>
+        </div>
+
+        <div class="timeline-item">
+          <h5>1967 – Regime Militar</h5>
+          <p>Consolidou o regime militar, restringindo direitos e ampliando o poder do Executivo, especialmente após o AI-5 (1968).</p>
+        </div>
+
+        <div class="timeline-item">
+          <h5>1988 – Constituição Cidadã</h5>
+          <p>Promulgada após 21 anos de ditadura, garantiu ampla proteção aos direitos humanos, sociais e civis. É a Constituição em vigor até hoje.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção de Redirecionamento ao Formulário -->
+  <section class="cta-section">
+    <div class="container">
+      <h3><i class="bi bi-chat-dots-fill me-2"></i>Compartilhe sua Experiência</h3>
+      <p>Conte o que você aprendeu e como foi sua experiência com o projeto EducaConstituição!</p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSc4kZL_7S5rLgFNxKStWlkUxWzaT3qzqYpg-iy7Q_ZFT68biA/viewform?usp=header" target="_blank" class="btn">
+        <i class="bi bi-pencil-square me-2"></i> Responder ao Formulário
+      </a>
+    </div>
+  </section>
+
+  <!-- Botões -->
+  <section class="py-5 text-center">
+    <div class="container">
+      <a href="https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm" target="_blank" class="btn btn-primary me-2">
+        <i class="bi bi-bookmark-star"></i> Ler Constituição de 1988
+      </a>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="container">
+      <p>© 2025 EducaConstituição | Desenvolvido por acadêmicos do Curso de Direito do 
+        <a href="https://www.univel.br/" target="_blank">Centro Universitário Univel</a></p>
+      <p>
+        <a href="https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm" target="_blank">Constituição Federal</a> |
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc4kZL_7S5rLgFNxKStWlkUxWzaT3qzqYpg-iy7Q_ZFT68biA/viewform?usp=header" target="_blank">Formulário de Feedback</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
